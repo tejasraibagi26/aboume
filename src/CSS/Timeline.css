@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden !important;
+}
+
+.tContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tContainer .title {
+  font-size: 2.5em;
+}
+
+.tContainer .title-header {
+  font-size: 4em;
+}
+
+.tContainer .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.tline-cont {
+  position: relative;
+  height: auto;
+  max-width: 60%;
+  text-align: start;
+}
+
+.timeline {
+  margin: 20px;
+}
+
+.date-year {
+  font-size: 22px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 420px) {
+  .tContainer .title-header {
+    height: 35%;
+  }
+
+  .timeline {
+    margin: 0;
+    margin-bottom: 20px;
+    overflow: hidden !important;
+  }
+
+  .tline-cont {
+    max-width: 90%;
+  }
+}
